@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		7EDF5A7E2D28410D00842D44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EDF5A602D28410C00842D44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EDF5A672D28410C00842D44;
+			remoteInfo = CitiezzInMotion;
+		};
+		7EDF5A882D28410D00842D44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EDF5A602D28410C00842D44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EDF5A672D28410C00842D44;
+			remoteInfo = CitiezzInMotion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7EDF5A682D28410C00842D44 /* CitiezzInMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitiezzInMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDF5A7D2D28410D00842D44 /* CitiezzInMotionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitiezzInMotionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDF5A872D28410D00842D44 /* CitiezzInMotionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CitiezzInMotionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7EDF5A6A2D28410C00842D44 /* CitiezzInMotion */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CitiezzInMotion;
+			sourceTree = "<group>";
+		};
+		7EDF5A802D28410D00842D44 /* CitiezzInMotionTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CitiezzInMotionTests;
+			sourceTree = "<group>";
+		};
+		7EDF5A8A2D28410D00842D44 /* CitiezzInMotionUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CitiezzInMotionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EDF5A652D28410C00842D44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDF5A7A2D28410D00842D44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDF5A842D28410D00842D44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EDF5A5F2D28410C00842D44 = {
+			isa = PBXGroup;
+			children = (
+				7EDF5A6A2D28410C00842D44 /* CitiezzInMotion */,
+				7EDF5A802D28410D00842D44 /* CitiezzInMotionTests */,
+				7EDF5A8A2D28410D00842D44 /* CitiezzInMotionUITests */,
+				7EDF5A692D28410C00842D44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EDF5A692D28410C00842D44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EDF5A682D28410C00842D44 /* CitiezzInMotion.app */,
+				7EDF5A7D2D28410D00842D44 /* CitiezzInMotionTests.xctest */,
+				7EDF5A872D28410D00842D44 /* CitiezzInMotionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EDF5A672D28410C00842D44 /* CitiezzInMotion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EDF5A912D28410D00842D44 /* Build configuration list for PBXNativeTarget "CitiezzInMotion" */;
+			buildPhases = (
+				7EDF5A642D28410C00842D44 /* Sources */,
+				7EDF5A652D28410C00842D44 /* Frameworks */,
+				7EDF5A662D28410C00842D44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7EDF5A6A2D28410C00842D44 /* CitiezzInMotion */,
+			);
+			name = CitiezzInMotion;
+			packageProductDependencies = (
+			);
+			productName = CitiezzInMotion;
+			productReference = 7EDF5A682D28410C00842D44 /* CitiezzInMotion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EDF5A7C2D28410D00842D44 /* CitiezzInMotionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EDF5A942D28410D00842D44 /* Build configuration list for PBXNativeTarget "CitiezzInMotionTests" */;
+			buildPhases = (
+				7EDF5A792D28410D00842D44 /* Sources */,
+				7EDF5A7A2D28410D00842D44 /* Frameworks */,
+				7EDF5A7B2D28410D00842D44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EDF5A7F2D28410D00842D44 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7EDF5A802D28410D00842D44 /* CitiezzInMotionTests */,
+			);
+			name = CitiezzInMotionTests;
+			packageProductDependencies = (
+			);
+			productName = CitiezzInMotionTests;
+			productReference = 7EDF5A7D2D28410D00842D44 /* CitiezzInMotionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7EDF5A862D28410D00842D44 /* CitiezzInMotionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EDF5A972D28410D00842D44 /* Build configuration list for PBXNativeTarget "CitiezzInMotionUITests" */;
+			buildPhases = (
+				7EDF5A832D28410D00842D44 /* Sources */,
+				7EDF5A842D28410D00842D44 /* Frameworks */,
+				7EDF5A852D28410D00842D44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EDF5A892D28410D00842D44 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7EDF5A8A2D28410D00842D44 /* CitiezzInMotionUITests */,
+			);
+			name = CitiezzInMotionUITests;
+			packageProductDependencies = (
+			);
+			productName = CitiezzInMotionUITests;
+			productReference = 7EDF5A872D28410D00842D44 /* CitiezzInMotionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EDF5A602D28410C00842D44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					7EDF5A672D28410C00842D44 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					7EDF5A7C2D28410D00842D44 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 7EDF5A672D28410C00842D44;
+					};
+					7EDF5A862D28410D00842D44 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 7EDF5A672D28410C00842D44;
+					};
+				};
+			};
+			buildConfigurationList = 7EDF5A632D28410C00842D44 /* Build configuration list for PBXProject "CitiezzInMotion" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EDF5A5F2D28410C00842D44;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7EDF5A692D28410C00842D44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EDF5A672D28410C00842D44 /* CitiezzInMotion */,
+				7EDF5A7C2D28410D00842D44 /* CitiezzInMotionTests */,
+				7EDF5A862D28410D00842D44 /* CitiezzInMotionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EDF5A662D28410C00842D44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDF5A7B2D28410D00842D44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDF5A852D28410D00842D44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EDF5A642D28410C00842D44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDF5A792D28410D00842D44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDF5A832D28410D00842D44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EDF5A7F2D28410D00842D44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EDF5A672D28410C00842D44 /* CitiezzInMotion */;
+			targetProxy = 7EDF5A7E2D28410D00842D44 /* PBXContainerItemProxy */;
+		};
+		7EDF5A892D28410D00842D44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EDF5A672D28410C00842D44 /* CitiezzInMotion */;
+			targetProxy = 7EDF5A882D28410D00842D44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7EDF5A8F2D28410D00842D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7EDF5A902D28410D00842D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EDF5A922D28410D00842D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CitiezzInMotion/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.acm.CitiezzInMotion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EDF5A932D28410D00842D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CitiezzInMotion/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.acm.CitiezzInMotion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7EDF5A952D28410D00842D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.acm.CitiezzInMotionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CitiezzInMotion.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CitiezzInMotion";
+			};
+			name = Debug;
+		};
+		7EDF5A962D28410D00842D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.acm.CitiezzInMotionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CitiezzInMotion.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CitiezzInMotion";
+			};
+			name = Release;
+		};
+		7EDF5A982D28410D00842D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.acm.CitiezzInMotionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CitiezzInMotion;
+			};
+			name = Debug;
+		};
+		7EDF5A992D28410D00842D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.acm.CitiezzInMotionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CitiezzInMotion;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EDF5A632D28410C00842D44 /* Build configuration list for PBXProject "CitiezzInMotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDF5A8F2D28410D00842D44 /* Debug */,
+				7EDF5A902D28410D00842D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EDF5A912D28410D00842D44 /* Build configuration list for PBXNativeTarget "CitiezzInMotion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDF5A922D28410D00842D44 /* Debug */,
+				7EDF5A932D28410D00842D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EDF5A942D28410D00842D44 /* Build configuration list for PBXNativeTarget "CitiezzInMotionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDF5A952D28410D00842D44 /* Debug */,
+				7EDF5A962D28410D00842D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EDF5A972D28410D00842D44 /* Build configuration list for PBXNativeTarget "CitiezzInMotionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EDF5A982D28410D00842D44 /* Debug */,
+				7EDF5A992D28410D00842D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EDF5A602D28410C00842D44 /* Project object */;
+}
