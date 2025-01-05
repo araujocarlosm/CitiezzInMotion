@@ -9,7 +9,7 @@ protocol FilterCitiesUseCaseProtocol {
   func execute(cities: [CityEntity], filter: String) -> [CityEntity]
 }
 
-final class FilterCitiesUseCase: FilterCitiesUseCaseProtocol {
+final class FilterCitiesUseCase : FilterCitiesUseCaseProtocol {
   func execute(cities: [CityEntity], filter: String) -> [CityEntity] {
     let formatted = filter.filteringCriteria
     
