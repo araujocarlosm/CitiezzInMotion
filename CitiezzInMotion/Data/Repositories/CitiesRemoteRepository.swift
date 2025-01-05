@@ -13,9 +13,6 @@ class CitiesRemoteRepository : RemoteRepositoryProtocol {
   }
   
   func fetchCities() async throws -> [CityEntity] {
-    let cities = try await dataSource.fetchCities().map { dto in
-      return CityMapper.mapToDomain(from: dto)
-    }
-    return cities
+    return try await dataSource.fetchCities().map { CityMapper.mapToDomain(from: $0) }
   }
 }
