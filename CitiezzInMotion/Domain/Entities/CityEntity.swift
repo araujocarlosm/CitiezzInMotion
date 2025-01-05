@@ -20,3 +20,8 @@ struct CityEntity : Identifiable {
     "\(name), \(country)"
   }
 }
+
+extension CityEntity {
+  var formattedNameForFiltering: String { name.filteringCriteria }
+  var formattedCountryForFiltering: String { country.filteringCriteria }
+}
