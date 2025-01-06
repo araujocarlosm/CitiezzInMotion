@@ -7,18 +7,6 @@
 import Foundation
 import SwiftUI
 
-class CityViewModel : ObservableObject {
-  @Published var selectedCity: CityEntity?
-  
-  func selectCity(city: CityEntity) {
-    selectedCity = city
-  }
-  
-  func clearCitySelection() {
-    selectedCity = nil
-  }
-}
-
 class CheckInViewModel : ObservableObject {
   @Published var isLoading: Bool = false
   @Published var isPortrait: Bool = true
