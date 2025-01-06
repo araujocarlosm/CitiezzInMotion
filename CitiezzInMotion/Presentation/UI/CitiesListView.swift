@@ -7,25 +7,59 @@
 import SwiftUI
 
 struct CitiesListView: View {
-  let cities : [CityEntity]
+  @ObservedObject private var viewModel: CityListViewModel
+  @State private var selection: CityEntity? = nil
+  
+  init(viewModel: CityListViewModel) {
+    self.viewModel = viewModel
+  }
   
   var body: some View {
     NavigationStack {
       ScrollView {
         LazyVStack {
-          ForEach(cities, id: \.id) { city in
-            NavigationLink(
-              destination: MapView(selectedCity: city, shouldShowList: false)
+          ForEach(viewModel.filteredCities, id: \.id) { city in
+            Button(action: {
+              selection = city
+            }) {
+              CityRow(city: city)
+            }.navigationDestination(isPresented: .constant(selection?.id == city.id)) {
+              MapFactory.createFromNavigation(selectedCity: city)
+            }
+            
+            /*Button {
+              cityData.selectedCity = city
+            } label: {
+              Text(city.name)
+            }
+            .navigationDestination(
+              isPresented: .constant(cityData.selectedCity == city)
+            ) {
+              MapFactory.createFromNavigation(selectedCity: city)
+            }*/
+            
+            //CityRow(city: city)
+            /*NavigationLink(
+              destination: MapFactory.createFromNavigation(selectedCity: city)
             ) {
               CityRow(city: city)
-            }
+            }*/
           }
-        }.padding()
+        }
+        .padding()
       }
+      //.navigationDestination(for: Int.self) { route in
+        
+      //}
       .navigationTitle("Citiezz In Motion")
+      .searchable(text: $viewModel.searchTerm, prompt: "Search your city...")
+      .onChange(of: viewModel.searchTerm, {
+        viewModel.updateFilter()
+      })
     }
   }
 }
+
 
 #Preview {
   let dtos = [
@@ -36,5 +70,5 @@ struct CitiesListView: View {
     CityDTO(country: "AU", name: "Sydney", id: 7, coord: Coordinates(lon: 70, lat: 70)),
   ]
   let cities = dtos.map { CityMapper.mapToDomain(from: $0) }
-  CitiesListView(cities: cities)
+  CitiesListFactory.create(with: cities)
 }

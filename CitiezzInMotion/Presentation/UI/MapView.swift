@@ -9,38 +9,42 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-  @State var selectedCity: CityEntity?
-  var cities : [CityEntity] = []
-  var shouldShowList = true
+  @ObservedObject private var viewModel: MapViewModel
+  
+  init(viewModel: MapViewModel) {
+    self.viewModel = viewModel
+  }
   
   var body: some View {
-    ZStack {
+    HStack {
+      if viewModel.shouldShowList {
+        NavigationStack {
+          ScrollView {
+            LazyVStack {
+              ForEach(viewModel.filteredCities, id: \.id) { city in
+                Button(action: {
+                  viewModel.selectedCity = city
+                }) {
+                  CityRow(city: city)
+                }
+              }
+            }
+          }
+          .searchable(text: $viewModel.searchTerm, prompt: "Search your city...")
+          .onChange(of: viewModel.searchTerm, {
+            viewModel.updateFilter()
+          })
+          .onAppear {
+            viewModel.onAppear()
+          }
+        }
+      }
       Map {
-        if let selectedCity {
+        if let selectedCity = viewModel.selectedCity {
           Marker(
             selectedCity.displayName,
             coordinate: selectedCity.coord.toLocation
           )
-        }
-      }
-      if shouldShowList {
-        HStack {
-          GeometryReader { geometry in
-            RoundedRectangle(cornerRadius: 16)
-              .frame(maxWidth: geometry.size.width * 0.35)
-              .overlay {
-                ScrollView {
-                  LazyVStack {
-                    ForEach(cities, id: \.id) { city in
-                      Button(action: { selectedCity = city }) {
-                        CityRow(city: city)
-                      }
-                    }
-                  }.padding()
-                }.background()
-              }.ignoresSafeArea()
-          }
-          Spacer()
         }
       }
     }
@@ -56,5 +60,5 @@ struct MapView: View {
     CityDTO(country: "AU", name: "Sydney", id: 7, coord: Coordinates(lon: 70, lat: 70)),
   ]
   let cities = dtos.map { CityMapper.mapToDomain(from: $0) }
-  MapView(cities: cities)
+  MapFactory.create(with: cities)
 }

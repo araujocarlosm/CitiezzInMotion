@@ -22,9 +22,9 @@ struct CheckInView: View {
         ProgressView()
       } else {
         if viewModel.isPortrait {
-          CitiesListView(cities: cities)
+          CitiesListFactory.create(with: cities)
         } else {
-          MapView(cities: cities)
+          MapFactory.create(with: cities)
         }
       }
     }.onAppear() {
