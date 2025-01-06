@@ -7,6 +7,8 @@
 import SwiftUI
 
 struct CityRow: View {
+  @State var showingCityDetails = false
+  
   let city: CityEntity
   var isFavorite: Bool {
     city.isFavorite
@@ -28,14 +30,19 @@ struct CityRow: View {
           .foregroundColor(isFavorite ? .red : .gray).onTapGesture {
             
           }
-        Image(systemName: "info.circle")
-          .foregroundColor(.blue).onTapGesture {
-            
-          }
+        Button(action: {
+          showingCityDetails.toggle()
+        }) {
+          Image(systemName: "info.circle")
+            .foregroundColor(.blue)
+        }
       }
     }
     .padding([.horizontal, .vertical], 10)
     .background(Color.gray.opacity(0.1)).clipShape(.buttonBorder)
+    .sheet(isPresented: $showingCityDetails) {
+      CityDetailView(city: city).presentationDetents([.fraction(0.3), .medium])
+    }
   }
 }
 
