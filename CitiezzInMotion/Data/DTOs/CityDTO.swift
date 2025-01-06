@@ -6,7 +6,7 @@
 //
 import Foundation
 
-struct CityDTO: Decodable {
+struct CityDTO: Decodable, Hashable {
     var country, name: String
     var id: Int
     var coord: Coordinates

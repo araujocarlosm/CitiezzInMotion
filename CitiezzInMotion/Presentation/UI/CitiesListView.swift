@@ -8,7 +8,6 @@ import SwiftUI
 
 struct CitiesListView: View {
   @ObservedObject private var viewModel: CityListViewModel
-  @State private var selection: CityEntity? = nil
   
   init(viewModel: CityListViewModel) {
     self.viewModel = viewModel
@@ -19,38 +18,16 @@ struct CitiesListView: View {
       ScrollView {
         LazyVStack {
           ForEach(viewModel.filteredCities, id: \.id) { city in
-            Button(action: {
-              selection = city
-            }) {
+            NavigationLink(value: city) {
               CityRow(city: city)
-            }.navigationDestination(isPresented: .constant(selection?.id == city.id)) {
-              MapFactory.createFromNavigation(selectedCity: city)
             }
-            
-            /*Button {
-              cityData.selectedCity = city
-            } label: {
-              Text(city.name)
-            }
-            .navigationDestination(
-              isPresented: .constant(cityData.selectedCity == city)
-            ) {
-              MapFactory.createFromNavigation(selectedCity: city)
-            }*/
-            
-            //CityRow(city: city)
-            /*NavigationLink(
-              destination: MapFactory.createFromNavigation(selectedCity: city)
-            ) {
-              CityRow(city: city)
-            }*/
           }
         }
         .padding()
       }
-      //.navigationDestination(for: Int.self) { route in
-        
-      //}
+      .navigationDestination(for: CityEntity.self) { city in
+        MapFactory.createFromNavigation(selectedCity: city)
+      }
       .navigationTitle("Citiezz In Motion")
       .searchable(text: $viewModel.searchTerm, prompt: "Search your city...")
       .onChange(of: viewModel.searchTerm, {

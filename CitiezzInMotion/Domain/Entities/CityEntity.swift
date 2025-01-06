@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CityEntity : Identifiable {
+struct CityEntity : Identifiable, Hashable {
   let city: CityDTO
   let isFavorite: Bool = false
   
