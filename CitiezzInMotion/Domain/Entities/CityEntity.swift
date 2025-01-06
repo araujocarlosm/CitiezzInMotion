@@ -15,13 +15,17 @@ struct CityEntity : Identifiable {
   var name: String { city.name }
   var country: String { city.country }
   var coord: Coordinates { city.coord }
-  
-  var displayName: String {
-    "\(name), \(country)"
-  }
 }
 
 extension CityEntity {
+  var displayName: String {
+    "\(name), \(country)"
+  }
+  
+  var displayCoordinates: String {
+    "Coordinates: \(coord.lat), \(coord.lon)"
+  }
+  
   var formattedNameForFiltering: String { name.filteringCriteria }
   var formattedCountryForFiltering: String { country.filteringCriteria }
 }
