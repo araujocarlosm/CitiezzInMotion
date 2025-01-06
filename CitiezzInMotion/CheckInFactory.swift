@@ -10,19 +10,19 @@ class CheckInFactory {
     return CheckInView(viewModel: createViewModel())
   }
   
-  static func createDebug() -> CheckInView {
-    let mockUseCase = MockFetchCitiesUseCase()
-    let viewModel = CheckInViewModel(fetchCitiesUseCase: mockUseCase)
-    viewModel.isPortrait = false
-    return CheckInView(viewModel: viewModel)
-  }
-  
   private static func createViewModel() -> CheckInViewModel {
-    return CheckInViewModel(fetchCitiesUseCase: createUseCase())
+    return CheckInViewModel(
+      fetchCitiesUseCase: createUseCase(),
+      sortCitiesUseCase: createSortUseCase()
+    )
   }
   
   private static func createUseCase() -> FetchCitiesUseCaseProtocol {
     return FetchCitiesUseCase(repository: createRepository())
+  }
+  
+  private static func createSortUseCase() -> SortCitiesUseCaseProtocol {
+    return SortCitiesUseCase()
   }
   
   private static func createRepository() -> RemoteRepositoryProtocol {

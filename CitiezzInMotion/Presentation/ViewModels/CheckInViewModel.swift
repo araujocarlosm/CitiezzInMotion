@@ -14,9 +14,11 @@ class CheckInViewModel : ObservableObject {
   
   private var deviceOrientation: UIDeviceOrientation?
   private let fetchCitiesUseCase: FetchCitiesUseCaseProtocol
+  private let sortCitiesUseCase: SortCitiesUseCaseProtocol
   
-  init (fetchCitiesUseCase: FetchCitiesUseCaseProtocol) {
+  init (fetchCitiesUseCase: FetchCitiesUseCaseProtocol, sortCitiesUseCase: SortCitiesUseCaseProtocol) {
     self.fetchCitiesUseCase = fetchCitiesUseCase
+    self.sortCitiesUseCase = sortCitiesUseCase
     setupOrientationObserver()
     updateOrientation()
   }
@@ -34,9 +36,14 @@ class CheckInViewModel : ObservableObject {
     
     do {
       cities = try await fetchCitiesUseCase.execute()
+      sortCities()
     } catch {
       print("Error fetching cities: \(error)")
     }
+  }
+  
+  func sortCities() {
+    cities = sortCitiesUseCase.execute(cities: self.cities, sortCriteria: .ascending)
   }
   
   private func setupOrientationObserver() {
