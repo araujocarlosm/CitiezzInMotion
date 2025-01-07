@@ -15,6 +15,12 @@ A SwiftUI-based iOS demo application showcasing Clean Architecture principles wi
 ### Presentation Layer
 Responsible for managing the user interface and interacting with the Domain Layer to display data and handle user inputs. It follows the MVVM to ensure a clean separation of concerns.
 
+**Performance optimization**
+A key aspect of the development was the use of LazyVStack to optimize the loading and rendering of over 200,000 city entries in the list. By leveraging LazyVStack, the app efficiently loads only the visible elements and those close to them, significantly reducing memory consumption. This approach ensures a smoother user experience, even when handling large datasets.
+
+**Enhanced search**
+To improve the accuracy of the search bar, special characters were formatted. This decision was made with the goal of increasing the number of possible matches when searching, ensuring that users can find relevant results even if there are variations in the use of special characters, such as accents, symbols, or punctuation.
+
 -----
 ### Domain Layer
 The Domain Layer is the core of the application's business logic. It defines the essential rules and operations, ensuring the app behaves consistently regardless of the data source or UI.
