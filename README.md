@@ -10,7 +10,7 @@ A SwiftUI-based iOS demo application showcasing Clean Architecture principles wi
 
 -----
 ## Architecture overview
-
+![Diagram](https://github.com/araujocarlosm/CitiezzInMotion/blob/main/CitiezzInMotion.drawio.png)
 
 ### Presentation Layer
 Responsible for managing the user interface and interacting with the Domain Layer to display data and handle user inputs. It follows the MVVM to ensure a clean separation of concerns.
